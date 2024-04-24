@@ -11,7 +11,7 @@ function App() {
     if (autoplay) {
       intervalId = setInterval(() => {
         setIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
-      }, 2700); // Change image every 2 seconds (adjust as needed)
+      }, 3000); // Change image every 2 seconds (adjust as needed)
     }
     return () => clearInterval(intervalId); // Cleanup function
   }, [autoplay]);
